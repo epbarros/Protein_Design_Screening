@@ -1,7 +1,7 @@
 10 ns NTP MD
  &cntrl
    ig = -1,			! Pseudo-random number generator (random seed based on time)
-   irest = 1,			! Restart the Simulation? (Yes)
+   irest = 0,			! Restart the Simulation? (No)
    ntx = 5,			! Read coordinates, velocities (ASCII)
    cut = 10,			! Non-bonding Cut-off (10 A)
    ntc = 2,			! SHAKE bond length constraints (constrain bonds with H)
