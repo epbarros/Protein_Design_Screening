@@ -3,7 +3,7 @@ This repository contains the python workflows for simulation preparation, analys
 
 This repository includes:
 - Jupyter notebooks for simulation preparation (Simulation_preparation_workflow.ipynb) and analysis (Design_screening_workflow.ipynb).
-- Protein preparation files.
+- Example of protein preparation files.
 - Amber molecular dynamics input scripts.
 - Example of input files necessary for analysis.
 
