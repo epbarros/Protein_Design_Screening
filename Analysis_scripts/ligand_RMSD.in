@@ -1,1 +1,9 @@
- 
+parm reference_file.pdb  ## Structure file of your reference structure
+
+parm design.prmtop 
+trajin trajectory_file.nc parmindex 1  
+
+reference reference_file.pdb parmindex 0  
+
+rms reference :1-113@CA  # Select atoms/residues to perform alignment on 
+rmsd :114 reference nofit out rmsd.dat # Select atoms/residues for which to calculate RMSD

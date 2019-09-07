@@ -1,0 +1,5 @@
+trajin /input/trajectory
+
+#measures the RMSF per residue based on the CA atoms or by the entire residue (byres)
+atomicfluct out rmsf_CAfitCA_output.dat   @CA byres 
+atomicfluct out rmsf_RESfitCA_output.dat  :1-109 byres 
