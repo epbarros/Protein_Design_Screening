@@ -1,0 +1,9 @@
+source leaprc.ff14SB
+loadamberparams frcmod.ionsjc_tip3p
+source leaprc.gaff 
+loadamberparams hbi.frcmod
+loadoff hbi.lib
+mol=loadpdb HBI_10_holo_readyForLeap.pdb
+solvatebox mol TIP3PBOX 13
+charge mol
+quit

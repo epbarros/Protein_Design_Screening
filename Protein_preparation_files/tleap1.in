@@ -1,1 +1,6 @@
- 
+source leaprc.ff14SB
+loadamberparams frcmod.ionsjc_tip3p
+mol=loadpdb HBI_10_apo_readyForLeap.pdb
+solvatebox mol TIP3PBOX 13
+charge mol
+quit

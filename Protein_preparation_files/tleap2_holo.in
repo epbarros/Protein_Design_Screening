@@ -1,0 +1,14 @@
+source leaprc.ff14SB
+loadamberparams frcmod.ionsjc_tip3p
+source leaprc.gaff 
+loadamberparams hbi.frcmod
+loadoff hbi.lib
+mol=loadpdb HBI_10_holo_readyForLeap.pdb
+solvatebox mol TIP3PBOX 13
+set default FlexibleWater on
+charge mol
+addions mol Na+ 12 Cl- 9
+charge mol
+setbox mol vdw
+saveamberparm mol HBI_10_holo.prmtop HBI_10_holo.inpcrd
+quit
